@@ -8,22 +8,6 @@
 curl -fsSL https://raw.githubusercontent.com/tumgle/cf-sing-box/master/install.sh -o install.sh && chmod +x install.sh && bash install.sh
 ```
 
-## 功能概览
-
-- 安装 `sing-box`
-- 配置 `Vmess + WS` 节点
-- 配置 `Vless + WS` 节点
-- 支持 `Vmess + WS` 与 `Vless + WS` 双节点共存
-- 可选接入并复用同一个 `CF Tunnel`
-- 每个节点独立保存自己的 `优选域名/IP` 与 `Host`
-- 设置节点时 `Host` 为必填，不使用回车默认值
-- 启用 `CF Tunnel` 时：
-  - `Host` 仍按每个节点单独保存
-  - `SNI/servername` 与输入的 `Host` 保持一致
-- 生成 `Base64`、`Clash/Mihomo`、`Sing-box` 订阅文件
-- 可选使用 `Caddy` 提供 HTTPS 在线订阅
-- 端口输入自动校验 `1-65535`
-
 ## 运行环境
 
 - Linux 服务器
